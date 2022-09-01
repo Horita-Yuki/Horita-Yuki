@@ -1,0 +1,57 @@
+@use 'variables' as var;
+
+#search-result {
+    width: 100%;
+    #wrapper {
+        width: 85%;
+        min-height: 100vh;
+        background-color: rgba(var.$sub-color, $alpha: 0.95);
+        h3 {
+            padding-top: 3rem;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        #search-result-box {
+            h3 {
+                padding-top: 3rem;
+                text-align: center;
+            }
+            #search-result-thumb {
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding-bottom: 10rem;
+                .gamethumb {
+                    width: 30%;
+                    margin: 3rem 1rem;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                h2 {
+                    display: inline-block;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    text-align: center;
+                    color: var.$accent-color1;
+                    .wp-pagenavi {
+                        padding: 3rem;
+                        font-family: sans-serif;
+                        span.current {
+                            border-color: var.$accent-color1;
+                        }
+                        a:hover {
+                            border-color: var.$accent-color1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

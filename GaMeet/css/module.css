@@ -1,0 +1,405 @@
+@charset "UTF-8";
+/*コンテンツのcss*/
+#search {
+  position: relative;
+  left: -10%;
+  width: 46vw;
+  height: 46vw;
+  transform: rotate(45deg);
+  background: #1F1D36;
+  margin: auto;
+  padding: 1rem;
+  color: #C2C6C9;
+  z-index: 1;
+}
+#search #search-box {
+  position: relative;
+  left: 27%;
+  top: -9%;
+  transform: rotate(-45deg) scale(1.2);
+}
+#search #search-box h2 {
+  color: #F5DF4D;
+  margin: 0 0 4.5rem 4.5rem;
+}
+#search #search-box input[type=search] {
+  margin-left: 2.6rem;
+}
+#search #search-box #checkbox #checkbox-list .checkbox-one {
+  display: flex;
+}
+#search #search-box #checkbox #checkbox-list .checkbox-one label {
+  display: block;
+  margin: 1rem auto 1rem 1rem;
+  transition: 0.3s;
+}
+#search #search-box #checkbox #checkbox-list .checkbox-one label:hover {
+  color: #F5DF4D;
+  transform: scale(1.01);
+  transition: 0.3s;
+}
+#search #search-box #checkbox #checkbox-list .checkbox-one label input[type=checkbox] {
+  visibility: hidden;
+}
+#search #search-box #checkbox #checkbox-list .checkbox-one label .checkbox-before {
+  transform: rotate(0deg);
+  display: inline-block;
+  margin: auto 0.5rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  outline: 1px solid #F5F5F5;
+  transition: 0.3s;
+}
+#search #search-box #checkbox #checkbox-list .checkbox-one label #checkbox0:checked ~ #checkbox-before0 {
+  transform: rotate(45deg);
+  background-color: #F5DF4D;
+  transition: 0.3s;
+}
+#search #search-box #checkbox #checkbox-list .checkbox-one label #checkbox1:checked ~ #checkbox-before1 {
+  transform: rotate(45deg);
+  background-color: #F5DF4D;
+  transition: 0.3s;
+}
+#search #search-box #checkbox #checkbox-list .checkbox-one label #checkbox2:checked ~ #checkbox-before2 {
+  transform: rotate(45deg);
+  background-color: #F5DF4D;
+  transition: 0.3s;
+}
+#search #search-box #checkbox #checkbox-list .checkbox-one label #checkbox3:checked ~ #checkbox-before3 {
+  transform: rotate(45deg);
+  background-color: #F5DF4D;
+  transition: 0.3s;
+}
+#search #search-box #checkbox #checkbox-list .checkbox-one label #checkbox4:checked ~ #checkbox-before4 {
+  transform: rotate(45deg);
+  background-color: #F5DF4D;
+  transition: 0.3s;
+}
+#search #search-box #submit {
+  margin-left: 1rem;
+}
+
+.info {
+  display: flex;
+  margin: 15rem 0;
+}
+.info #show-more-game {
+  position: relative;
+  left: -30%;
+}
+.info #show-more-game .show-more2 {
+  margin: 2% auto;
+  position: relative;
+  top: 106%;
+}
+.info #show-more-game .show-more2 .end-arrow2 {
+  cursor: pointer; /*マウスカーソルを指マークに*/
+  outline: 1px solid #1F1D36;
+  height: 4rem;
+  width: 4rem !important;
+  background-color: #F5DF4D;
+  transform: rotate(45deg);
+  position: absolute;
+  filter: drop-shadow(0px 1px 5px #111);
+}
+.info #show-more-game .show-more2 .end-arrow2::after {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  border-top: 1px solid #1F1D36;
+  border-right: 1px solid #1F1D36;
+}
+.info #show-more-game .show-more2 .end-arrow2:hover {
+  transform: scale(1.2) rotate(45deg);
+  background-color: #f8e87d;
+  transition: 0.3s;
+}
+.info .placement {
+  position: relative;
+  left: -10%;
+  justify-content: center;
+  width: 50vw;
+  height: 50vw;
+  margin: auto;
+  z-index: 2;
+}
+.info .placement .infoTable {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5rem 0.5rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-45deg);
+  transform-origin: center;
+}
+.info .placement .infoTable .gamethumb {
+  width: 15vw;
+  height: 15vw;
+  background-color: #F5DF4D;
+  box-sizing: border-box;
+  outline: 1px solid #111;
+  filter: drop-shadow(0px 1px 1px #111);
+}
+.info .placement .infoTable .gamethumb img {
+  will-change: transform;
+  margin: 0.5rem;
+  position: relative;
+  top: 25%;
+  left: 10%;
+  transform: rotate(45deg);
+  transform-origin: center;
+  width: 75%;
+  height: auto;
+  transition: 0.3s;
+  filter: drop-shadow(0px 1px 1px #111);
+}
+.info .placement .infoTable .gamethumb p {
+  will-change: transform;
+  text-align: center;
+  display: block;
+  transform: rotate(45deg);
+  transform-origin: center;
+  color: #1F1D36;
+  font-size: 1rem;
+  position: relative;
+  top: 15%;
+  left: -20%;
+  transition: all 0.3s;
+}
+.info .placement .infoTable .gamethumb:hover {
+  will-change: transform;
+  transform: rotate(45deg) scale(1.333);
+  transform-origin: center;
+  transition: all 0.6s;
+  z-index: 10;
+}
+.info .placement .infoTable .gamethumb:hover img {
+  will-change: transform;
+  transform: rotate(0deg);
+  transform-origin: center;
+  transition: all 0.6s;
+  width: 90%;
+  position: static;
+  padding: 0.7rem;
+  margin: 0 auto;
+}
+.info .placement .infoTable .gamethumb:hover p {
+  will-change: transform;
+  transform: rotate(0deg) scale(1.2);
+  transform-origin: center;
+  transition: all 0.6s;
+  position: static;
+  margin: 1rem;
+}
+
+#news {
+  position: relative;
+  margin: 3rem auto;
+  width: 80%;
+  background-color: #1F1D36;
+  color: #F5F5F5;
+  padding: 2rem;
+}
+#news h2 {
+  text-align: center;
+  color: #F5DF4D;
+  letter-spacing: 0.2em;
+}
+#news li {
+  border-bottom: 2px dotted #F5F5F5;
+  margin: 1rem auto;
+}
+#news li time {
+  color: #F5DF4D;
+}
+#news li p {
+  transition: 0.3s;
+}
+#news li p:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+#page-game {
+  width: 100%;
+}
+#page-game #wrapper {
+  width: 85%;
+  background-color: rgba(31, 29, 54, 0.95);
+}
+#page-game #wrapper h2 {
+  text-align: center;
+  padding-top: 3rem;
+  color: #F5DF4D;
+}
+#page-game #wrapper #show-more-game {
+  position: relative;
+  top: 10%;
+  left: 63%;
+}
+#page-game #wrapper #show-more-game .show-more2 {
+  position: relative;
+}
+#page-game #wrapper #show-more-game .show-more2 .end-arrow2 {
+  cursor: pointer; /*マウスカーソルを指マークに*/
+  outline: 1px solid #1F1D36;
+  height: 4rem;
+  width: 4rem !important;
+  background-color: #F5DF4D;
+  transform: rotate(45deg);
+  position: absolute;
+}
+#page-game #wrapper #show-more-game .show-more2 .end-arrow2::after {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  border-top: 1px solid #1F1D36;
+  border-right: 1px solid #1F1D36;
+}
+#page-game #wrapper #show-more-game .show-more2 .end-arrow2:hover {
+  transform: scale(1.2) rotate(45deg);
+  background-color: #f8e87d;
+  transition: 0.3s;
+}
+#page-game #wrapper .wp-pagenavi {
+  padding: 3rem;
+  font-family: sans-serif;
+}
+#page-game #wrapper .wp-pagenavi span.current {
+  border-color: #F5DF4D;
+}
+#page-game #wrapper .wp-pagenavi a:hover {
+  border-color: #F5DF4D;
+}
+#page-game #wrapper .placement {
+  justify-content: center;
+  width: 50vw;
+  height: 50vw;
+  margin: auto;
+  padding: 10rem 0;
+  z-index: 2;
+}
+#page-game #wrapper .placement .infoTable {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5rem 0.5rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-45deg);
+  transform-origin: center;
+}
+#page-game #wrapper .placement .infoTable .gamethumb {
+  width: 15vw;
+  height: 15vw;
+  background-color: #F5DF4D;
+  box-sizing: border-box;
+  outline: 1px solid #111;
+  filter: drop-shadow(0px 1px 1px #111);
+}
+#page-game #wrapper .placement .infoTable .gamethumb img {
+  will-change: transform;
+  margin: 0.5rem;
+  position: relative;
+  top: 23%;
+  left: 3%;
+  transform: rotate(45deg);
+  transform-origin: center;
+  width: 75%;
+  height: auto;
+  transition: 0.3s;
+  filter: drop-shadow(0px 1px 1px #111);
+}
+#page-game #wrapper .placement .infoTable .gamethumb p {
+  will-change: transform;
+  text-align: center;
+  display: block;
+  transform: rotate(45deg);
+  transform-origin: center;
+  color: #1F1D36;
+  font-size: 1rem;
+  position: relative;
+  top: 15%;
+  left: -20%;
+  transition: all 0.3s;
+}
+#page-game #wrapper .placement .infoTable .gamethumb:hover {
+  will-change: transform;
+  transform: rotate(45deg) scale(1.333);
+  transform-origin: center;
+  transition: all 0.6s;
+  z-index: 10;
+}
+#page-game #wrapper .placement .infoTable .gamethumb:hover img {
+  will-change: transform;
+  transform: rotate(0deg);
+  transform-origin: center;
+  transition: all 0.6s;
+  width: 90%;
+  position: static;
+  padding: 0.5rem;
+  margin: 0 auto;
+}
+#page-game #wrapper .placement .infoTable .gamethumb:hover p {
+  will-change: transform;
+  transform: rotate(0deg) scale(1.2);
+  transform-origin: center;
+  transition: all 0.6s;
+  position: static;
+  margin: 1rem;
+}
+
+#page-news #wrapper {
+  width: 85%;
+  background-color: rgba(31, 29, 54, 0.95);
+}
+#page-news #wrapper h2 {
+  text-align: center;
+  padding-top: 3rem;
+  color: #F5DF4D;
+}
+#page-news #wrapper #news-list {
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+#page-news #wrapper #news-list li {
+  margin: 2rem auto;
+  border-bottom: 2px dotted #F5F5F5;
+}
+#page-news #wrapper #news-list li time {
+  color: #F5DF4D;
+}
+#page-news #wrapper #news-list p.main-text, #page-news #wrapper #news-list p.introduction-text {
+  font-size: 0;
+}
+
+#page-about #wrapper {
+  width: 85%;
+  min-height: 100%;
+  background-color: rgba(31, 29, 54, 0.95);
+}
+#page-about #wrapper h2 {
+  text-align: center;
+  font-size: 4rem;
+  padding: 3rem 0;
+  color: #F5DF4D;
+}
+#page-about #wrapper h3 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+#page-about #wrapper .main-text {
+  margin: 2rem 2rem 0 2rem;
+  padding-bottom: 2rem;
+  line-height: 5rem;
+}/*# sourceMappingURL=module.css.map */

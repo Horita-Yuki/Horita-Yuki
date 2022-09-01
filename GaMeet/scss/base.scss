@@ -1,0 +1,118 @@
+/*wrapper,hedder,footer等のcss*/
+@use 'variables' as var;
+
+html {
+	background: var.$base-color;
+	font-feature-settings: "palt";//文字間を調節してくれるらしい
+	overflow-x: hidden;//横スクロール禁止
+	scroll-behavior: smooth;//スムーススクロール
+	body {
+		background-size: 100%;
+	}
+}
+#wrapper {
+	margin: 0 auto;
+ 	z-index: 2;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+	width: 100%;
+	height: 100%;
+}
+/*ヘッダー*/
+.header {
+	background-color: var.$sub-color;
+	width: 100%;
+	height: 7rem;
+	overflow: hidden;
+	position: relative;
+	transition: 0.3s;
+	// //position: fixed;					/*ヘッダーを画面上部に固定*/
+	// top: 0;
+	// left: 0;
+	h1 {
+		font-size: 5rem;
+		letter-spacing: 0.2em;
+		color: var.$accent-color1;
+		display: table;
+		margin: auto;
+		font-family: 'DotGothic16', sans-serif;
+		&:hover {
+			transform: scale(1.1);
+			color: lighten(var.$accent-color1, 10%);
+			transition: 0.3s;
+		}
+	}
+	.square {
+		transform: rotate(45deg);
+		position: absolute;
+	}
+	.sq1 {
+		width: 2rem;
+		height: 2rem;
+		background-color: var.$accent-color1;
+		top: 4rem;
+		left: 7%;
+	}
+	.sq2 {
+		width: 6rem;
+		height: 6rem;
+		background-color: var.$accent-color2;
+		top: -1rem;
+		left: 10%;
+	}
+	.sq3 {
+		width: 3rem;
+		height: 3rem;
+		background-color: var.$accent-color2;
+		top: 2rem;
+		left: 85%;
+	}
+	.sq4 {
+		width: 7rem;
+		height: 7rem;
+		background-color: var.$accent-color1;
+		top: 2rem;
+		left: 90%;
+	}
+}
+footer {
+	position: relative;
+	background-color: var.$sub-color;
+	width: 100%;
+	height: 7rem;
+	bottom: 0;
+	left: 0;
+	z-index: 5;
+	overflow: hidden;
+	a {
+		font-family: 'DotGothic16', sans-serif;
+		transition: 0.3s;
+		&:hover {
+			transform: scale(1.1);
+			transition: 0.3s;
+		}
+	}
+	.square {
+		transform: rotate(45deg);
+		position: absolute;
+	}
+	.sq1 {
+		width: 3rem;
+		height: 3rem;
+		background-color: var.$accent-color2;
+		top: 0rem;
+		left: 2%;
+	}
+	.sq2 {
+		width: 6rem;
+		height: 6rem;
+		background-color: var.$accent-color1;
+		top: 2rem;
+		left: 8%;
+	}
+	.sq3 {
+		width: 7rem;
+		height: 7rem;
+		background-color: var.$accent-color2;
+		top: -1rem;
+		left: 18%;
+	}
+}

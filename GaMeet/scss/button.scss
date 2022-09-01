@@ -1,0 +1,55 @@
+@use 'variables' as var;
+.footer-button a,.footer-button li {
+	width: 10rem;
+	margin: 0;
+	color: var.$accent-color1;
+	height: 5rem;                 /*もともと60px*/
+	text-align: center;
+	line-height: 5rem;            /*ボタン高さと合わせて上下中央揃え*/
+	border: 1px solid var.$accent-color1;       /*外枠*/
+	position: relative;
+	z-index: 1;
+	display: block;
+	overflow: hidden;
+	transition: .3s;              /*アニメーションにかかる時間*/
+}
+.footer-nav ul {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+}
+.footer-nav a {
+	font-size: 3rem;
+	background: var.$sub-color;
+	margin: 1rem 3rem 0 1rem;
+}
+.footer-button a,.footer-button li::before,
+.footer-button a,.footer-button li::after {
+	content: "";
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	transition: transform ease .3s;
+}
+.footer-button a,.footer-button li::before {
+	right: -10rem;
+	border-right: 10rem solid transparent;
+	border-bottom: 10rem solid var.$accent-color1;
+	transform: translateX(-100%);
+}
+.footer-button a,.footer-button li::after {
+	left: -10rem;
+	border-left: 10rem solid transparent;
+	border-top: 10rem solid var.$accent-color1;
+	transform: translateX(100%);
+}
+.footer-button a,.footer-button li:hover {
+	color: var.$sub-color;
+}
+.footer-button a,.footer-button li:hover::before {
+	transform: translateX(-49%);
+}
+.footer-button a,.footer-button li:hover::after {
+	transform: translateX(49%);
+}

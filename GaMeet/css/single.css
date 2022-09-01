@@ -1,0 +1,72 @@
+#single-page {
+  z-index: 1;
+  min-height: 100%;
+}
+#single-page #wrapper {
+  background-color: rgba(31, 29, 54, 0.95);
+  width: 85%;
+  min-height: 100%;
+  margin: 0 auto;
+}
+#single-page #wrapper #title-box {
+  padding: 3rem;
+}
+#single-page #wrapper #title-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+#single-page #wrapper #title-box h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 3rem;
+}
+#single-page #wrapper #single-contents-box {
+  margin: 0 auto;
+  padding: 0 3rem 10rem 3rem;
+}
+#single-page #wrapper #single-contents-box h2 {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+#single-page #wrapper #single-contents-box img {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+}
+#single-page #wrapper #single-contents-box .main-text {
+  padding: 2rem 6rem;
+}
+#single-page #wrapper #single-contents-box .introduction-box {
+  padding: 3rem;
+}
+#single-page #wrapper #single-contents-box .introduction-box .introduction-contents {
+  width: 50%;
+}
+#single-page #wrapper #single-contents-box .introduction-box .introduction-contents .introduction-text {
+  font-size: 1.5rem;
+  width: 85%;
+  margin: 0 auto;
+}
+#single-page #wrapper #single-contents-box .introduction-box .is-nowrap {
+  align-items: flex-start;
+}
+#single-page .overview {
+  text-align: center;
+  margin: 5rem auto;
+}
+#single-page .overview .overview-row {
+  gap: 1px;
+}
+#single-page .overview .overview-row p.overview-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  width: 25%;
+  height: 9rem;
+  outline: 1px solid #F5F5F5;
+}/*# sourceMappingURL=single.css.map */

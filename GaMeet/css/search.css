@@ -1,0 +1,53 @@
+#search-result {
+  width: 100%;
+}
+#search-result #wrapper {
+  width: 85%;
+  min-height: 100vh;
+  background-color: rgba(31, 29, 54, 0.95);
+}
+#search-result #wrapper h3 {
+  padding-top: 3rem;
+  text-align: center;
+}
+#search-result #wrapper p {
+  text-align: center;
+}
+#search-result #wrapper #search-result-box h3 {
+  padding-top: 3rem;
+  text-align: center;
+}
+#search-result #wrapper #search-result-box #search-result-thumb {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 10rem;
+}
+#search-result #wrapper #search-result-box #search-result-thumb .gamethumb {
+  width: 30%;
+  margin: 3rem 1rem;
+}
+#search-result #wrapper #search-result-box #search-result-thumb .gamethumb img {
+  width: 100%;
+  height: auto;
+}
+#search-result #wrapper #search-result-box #search-result-thumb h2 {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #F5DF4D;
+}
+#search-result #wrapper #search-result-box #search-result-thumb h2 .wp-pagenavi {
+  padding: 3rem;
+  font-family: sans-serif;
+}
+#search-result #wrapper #search-result-box #search-result-thumb h2 .wp-pagenavi span.current {
+  border-color: #F5DF4D;
+}
+#search-result #wrapper #search-result-box #search-result-thumb h2 .wp-pagenavi a:hover {
+  border-color: #F5DF4D;
+}/*# sourceMappingURL=search.css.map */

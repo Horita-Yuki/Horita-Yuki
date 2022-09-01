@@ -1,0 +1,121 @@
+/*==================================================
+スライダーのためのcss
+===================================*/
+@use 'variables' as var;
+.slider2 {/*横幅94%で左右に余白を持たせて中央寄せ*/
+    margin:0 auto;
+    background-color: var.$sub-color;
+    img {
+        width: 100%;/*スライダー内の画像を横幅100%に*/
+        height: auto;
+		outline: 5px solid var.$accent-color1;
+		&:hover {
+			filter: brightness(120%);
+			transform: scale(1.05);
+			transition: 0.3s;
+		}
+    }
+}
+//ゲーム発売日ここから
+#release-date {
+	position: relative;
+	margin: 1rem auto;
+	background-color: var.$sub-color;
+	height: 100%;
+	h2 {
+		text-align: center;
+		color: var.$accent-color1;
+		padding: 1rem;
+	}
+	ul {
+		li {
+			margin: 1rem;
+		}
+		.release-date {
+			color: var.$accent-color2;
+			text-align: right;
+			font-size: 1.5rem;
+		}
+		p {
+			color: var.$accent-color2;
+			text-align: center;
+		}
+	}
+	#slidebar-box {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		padding: 1rem;
+		&::before {
+			font-family: 'Material Icons';
+			content: "\E314";
+			display: block;
+			color: var.$base-color;
+			margin: 0 0.5rem;
+			transform: scale(2);
+		}
+		&::after {
+			font-family: 'Material Icons';
+			content: "\E315";
+			display: block;
+			color: var.$base-color;
+			margin: 0 0.5rem;
+			transform: scale(2);
+		}
+		input[type="range"] {
+			display: block;
+			overflow: hidden;
+			width: 70%;
+            height: 1rem;
+			-webkit-appearance: none; // これ無しだとスタイルがほぼ全く反映されないので注意
+			appearance: none;
+			cursor: pointer; // カーソルを分かりやすく
+			border-radius: 0; // バーの端の丸み
+		}
+		::-webkit-slider-runnable-track {
+	    	background: #666;
+		}
+		::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			width: 1rem;
+			height: 1rem;
+			// transform: rotate(45deg);
+			border: 2px solid #ddd;
+			background: var.$sub-color;
+			box-shadow: -500px 0 0 500px var.$accent-color1;
+		}
+	}
+}
+.show-more {
+	margin: 2% auto;
+	position: relative;
+	.end-arrow {
+		cursor: pointer;/*マウスカーソルを指マークに*/
+		margin: auto;
+		outline: 1px solid var.$sub-color;
+		height: 4rem;
+		width: 4rem !important;
+		background-color: var.$accent-color1;
+		transform: rotate(45deg);
+		&::after {
+			position: absolute;
+			top: 25%;
+			left: 25%;
+			content: "";
+			width: 2rem;
+			height: 2rem;
+			border-top: 1px solid var.$sub-color;
+			border-right: 1px solid var.$sub-color;
+		}
+		&:hover {
+			transform: scale(1.2) rotate(45deg);
+			background-color: lighten(var.$accent-color1, 10%);
+			transition: 0.3s;
+		}
+	}
+	p {
+		font-size: 1.5rem;
+		margin-top: 3rem;
+	}
+}
+//ゲーム発売日ここまで

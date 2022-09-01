@@ -1,0 +1,13 @@
+@charset "utf-8";
+@use 'reset';			/*リセットcss*/
+@forward 'variables';		/*変数用css*/
+@use 'release-slideshow';   //ゲーム発売日順表示のcss
+@use 'background';      //動く背景のcss
+@use 'slick';			/*slickのcss*/
+@use 'button';			/*ナビゲーションボタンのcss*/
+@use 'base';			/*wrapper,hedder,footer等のcss*/
+@use 'common';			/*aタグやh1タグ等の汎用css*/
+@use 'slide';           //メインヴィジュアルのcss
+@use 'module';			/*コンテンツのcss*/
+@use 'single';          //投稿ページのcss
+@use 'search';          //投稿ページのcss

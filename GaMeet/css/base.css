@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/*wrapper,hedder,footer等のcss*/
+html {
+  background: #F5F5F5;
+  font-feature-settings: "palt";
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+html body {
+  background-size: 100%;
+}
+
+#wrapper {
+  margin: 0 auto;
+  z-index: 2; /*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+  width: 100%;
+  height: 100%;
+}
+
+/*ヘッダー*/
+.header {
+  background-color: #1F1D36;
+  width: 100%;
+  height: 7rem;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s;
+}
+.header h1 {
+  font-size: 5rem;
+  letter-spacing: 0.2em;
+  color: #F5DF4D;
+  display: table;
+  margin: auto;
+  font-family: "DotGothic16", sans-serif;
+}
+.header h1:hover {
+  transform: scale(1.1);
+  color: #f8e87d;
+  transition: 0.3s;
+}
+.header .square {
+  transform: rotate(45deg);
+  position: absolute;
+}
+.header .sq1 {
+  width: 2rem;
+  height: 2rem;
+  background-color: #F5DF4D;
+  top: 4rem;
+  left: 7%;
+}
+.header .sq2 {
+  width: 6rem;
+  height: 6rem;
+  background-color: #C2C6C9;
+  top: -1rem;
+  left: 10%;
+}
+.header .sq3 {
+  width: 3rem;
+  height: 3rem;
+  background-color: #C2C6C9;
+  top: 2rem;
+  left: 85%;
+}
+.header .sq4 {
+  width: 7rem;
+  height: 7rem;
+  background-color: #F5DF4D;
+  top: 2rem;
+  left: 90%;
+}
+
+footer {
+  position: relative;
+  background-color: #1F1D36;
+  width: 100%;
+  height: 7rem;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  overflow: hidden;
+}
+footer a {
+  font-family: "DotGothic16", sans-serif;
+  transition: 0.3s;
+}
+footer a:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+footer .square {
+  transform: rotate(45deg);
+  position: absolute;
+}
+footer .sq1 {
+  width: 3rem;
+  height: 3rem;
+  background-color: #C2C6C9;
+  top: 0rem;
+  left: 2%;
+}
+footer .sq2 {
+  width: 6rem;
+  height: 6rem;
+  background-color: #F5DF4D;
+  top: 2rem;
+  left: 8%;
+}
+footer .sq3 {
+  width: 7rem;
+  height: 7rem;
+  background-color: #C2C6C9;
+  top: -1rem;
+  left: 18%;
+}/*# sourceMappingURL=base.css.map */
