@@ -33,8 +33,7 @@ const myFunc = () => {
     const pageHeight = document.getElementById('index').scrollHeight;//ページ全体の高さを取得
     // console.log("ページ高さ" + pageHeight);
     // console.log(pageHeight);
-    elem_body.style.height = (pageHeight - 100) + "px";
-    console.log(elem_body.style.height);
+    elem_body.style.height = (pageHeight) + "px";
     elem[0].style.height = pageHeight + "px";//解説ボタンが三つあるうちの一つ
     elem[1].style.height = pageHeight + "px";
     elem[2].style.height = pageHeight + "px";
@@ -48,7 +47,7 @@ window.addEventListener("resize", myFunc, false);
 buttonOpen0.addEventListener('click', ModalOpen0);
     function ModalOpen0() {
     modal0.style.display = 'flex';
-    window.scroll({top: 780, behavior: 'smooth'});
+    window.scroll({top: 810, behavior: 'smooth'});
 }
 // バツ印がクリックされた時
 buttonClose0.addEventListener('click', ModalClose0);
@@ -74,7 +73,7 @@ function outsideClose0(e) {
 buttonOpen1.addEventListener('click', ModalOpen1);
     function ModalOpen1() {
     modal1.style.display = 'flex';
-    window.scroll({top: 810, behavior: 'smooth'});
+    window.scroll({top: 840, behavior: 'smooth'});
 }
 // バツ印がクリックされた時
 buttonClose1.addEventListener('click', ModalClose1);
@@ -99,7 +98,7 @@ function outsideClose1(e) {
 buttonOpen2.addEventListener('click', ModalOpen2);
     function ModalOpen2() {
     modal2.style.display = 'flex';
-    window.scroll({top: 950, behavior: 'smooth'});
+    window.scroll({top: 980, behavior: 'smooth'});
 }
 // バツ印がクリックされた時
 buttonClose2.addEventListener('click', ModalClose2);
