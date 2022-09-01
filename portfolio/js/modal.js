@@ -28,14 +28,17 @@ const buttonClose2b = document.getElementById('ModalClose2-b');
 // };
 
 const myFunc = () => {
-    let elem = document.getElementsByClassName('feature');
-    const pageHeight = document.getElementById('index').scrollHeight;
-    console.log("ページ高さ" + pageHeight);
+    let elem = document.getElementsByClassName('feature');//解説ページを取得
+    let elem_body = document.getElementById('background');//bg用に用意
+    const pageHeight = document.getElementById('index').scrollHeight;//ページ全体の高さを取得
+    // console.log("ページ高さ" + pageHeight);
     // console.log(pageHeight);
-    elem[0].style.height = pageHeight + "px";
+    elem_body.style.height = (pageHeight - 100) + "px";
+    console.log(elem_body.style.height);
+    elem[0].style.height = pageHeight + "px";//解説ボタンが三つあるうちの一つ
     elem[1].style.height = pageHeight + "px";
     elem[2].style.height = pageHeight + "px";
-    console.log("要素高さ" + elem[0].style.height);
+    // console.log("要素高さ" + elem[0].style.height);
 };
 
 window.addEventListener("load", myFunc, false);
