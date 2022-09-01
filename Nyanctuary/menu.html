@@ -1,0 +1,98 @@
+<!doctype html>
+
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<title>Nyanctuary -メニュー-</title>
+<link rel="stylesheet" href="import.css">
+</head>
+<body>
+<header id="header">
+  <h1>Nyanctuary</h1>
+  <nav id="header-nav"  class="gnavi"> <a href="index.html">
+    <p>Home<br>
+      <span>ホーム</span></p>
+    </a> <a href="index.html#system">
+    <p>System<br>
+      <span>営業日/営業時間/料金案内</span></p>
+    </a> <a href="index.html#access">
+    <p>Access<br>
+      <span>アクセス</span></p>
+    </a> <a href="index.html#guide">
+    <p>Guide<br>
+      <span>お願い</span></p>
+    </a> <a href="menu.html">
+    <p>Menu<br>
+      <span>メニュー</span></p>
+    </a> </nav>
+</header>
+<div id="to-top-button" class="DownMove"> <a href="#header"><img src="images/hand-button.svg" alt="トップに飛ぶボタン" id="to-top-button-img"></a> </div>
+<div id="menu-button" class="DownMove openbtn1"><img src="images/hand-button.svg" alt="メニューを出すボタン" id="menu-button-img"></div>
+<div id="g-navi">
+  <div id="g-navi-list">
+    <ul>
+      <a href="index.html">
+      <li>Home<br><span>ホーム</span></li>
+      </a> <a href="index.html#system">
+      <li>System<br><span>営業日/営業時間/料金案内</span></li>
+      </a> <a href="index.html#access">
+      <li>Access<br><span>アクセス</span></li>
+      </a> <a href="index.html#guide">
+      <li>Guide<br><span>お願い</span></li>
+      </a> <a href="menu.html">
+        <li>Menu<br><span>メニュー</span></li>
+    </a>
+    </ul>
+  </div>
+  <div id="close-button" class="closebtn"><img src="images/hand-button.svg" alt="メニューをとじるボタン" id="close-button-img"></div>
+</div>
+<div id="wrapper">
+  <div id="drink"> <img src="images/menu.png" id="drink-img" class="fadeIn-top" alt="カフェモカの写真">
+    <div id="drink-text" class="fadeIn-bottom">
+      <h2>Drink <br>
+        <span> ワンドリンク制について</span></h2>
+      <p> ご利用代金に、<br class="sp-br">ワンドリンク代として<br class="sp-br">別途300円いただきます。</p>
+      <p>ドリンクの追加オーダーは<br class="sp-br">一律200円で承っております。<br>（料金はすべて消費税込です）</p>
+      <p>猫たちと安らぎの場を<br class="sp-br">ゆっくりとお過ごしください。</p>
+    </div>
+  </div>
+  <div id="inner-wrapper">
+    <h2 id="menu">Menu<br>
+      <span>メニュー</span></h2>
+    <div id="menu-block">
+      <div class="menu-items" >
+        <p class="temperature">Ice</p>
+        <p>カフェオレ</p>
+        <p>アイスコーヒー</p>
+        <p>アイスティー</p>
+        <p>(ミルク・レモン)</p>
+        <p>ウーロン茶</p>
+        <p>緑茶</p>
+        <p>リンゴジュース</p>
+        <p>オレンジジュース</p>
+      </div>
+      <div class="menu-items">
+        <p class="temperature">Hot</p>
+        <p>カフェラテ</p>
+        <p>ホットコーヒー</p>
+        <p>ホットティー</p>
+        <p>(ミルク・レモン)</p>
+        <p>ほうじ茶</p>
+        <p>緑茶</p>
+      </div>
+    </div>
+  </div>
+  <!---inner-wrapperここまで---> 
+</div>
+<!---wrapperここまで--->
+<footer> <!---フッター--->
+  <p id="footer">&copy;保護猫カフェ Nyanctuary</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
+<!--ボタン隠しの呼び出し--> 
+<script src="js/button-hide.js"></script>
+<script src="js/drawer-menu.js"></script>
+<script src="js/fadeIn.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+
+
+/*　消える動き　*/
+
+#to-top-button-img.UpMove{
+	animation: UpAnime 1s forwards;
+}
+
+@keyframes UpAnime{
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(200px);
+  }
+}
+
+/*　下に下がる動き　*/
+
+#to-top-button-img.DownMove{
+	animation: DownAnime 1s forwards;
+}
+@keyframes DownAnime{
+  0% {
+    transform: translateY(200);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
+/*　消える動き　*/
+
+#menu-button-img.UpMove{
+	animation: UpAnime 1s forwards;
+}
+
+@keyframes UpAnime{
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(200px);
+  }
+}
+
+/*　下に下がる動き　*/
+
+#menu-button-img.DownMove{
+	animation: DownAnime .5s forwards;
+}
+@keyframes DownAnime{
+  0% {
+    transform: translateY(200);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}

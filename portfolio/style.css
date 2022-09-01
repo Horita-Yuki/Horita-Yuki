@@ -1,0 +1,348 @@
+html {
+    width: 100%;
+    font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+body {
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    font-size: 150px;
+}
+h2 {
+    text-align: center;
+    font-size: 80px;
+    line-height: 50px;
+    padding: 0.5em 0;
+    margin: 1em calc(50% - 50vw);
+    width: 100vw;
+    background-color: #eee;
+}
+h2 span {
+    font-size: 40px;
+    color: #999;
+}
+a {
+    text-decoration: none;
+}
+button {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+}
+#main-visual {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+}
+/* 挨拶文のタイピングアニメーション */
+.TextTyping {
+    font-family: 'Yomogi', cursive;
+}
+.TextTyping span {
+    display: none;
+}
+  /*文字列後ろの線の設定*/
+.TextTyping::after {
+    content: "|";
+    animation: typinganime .8s ease infinite;
+}
+  
+@keyframes typinganime{
+    from{opacity:0}
+    to{opacity:1}
+}
+/* 挨拶文のタイピングアニメーションここまで */
+
+.career {
+    width: 75%;
+    margin: 0 auto;
+}
+.license {
+    width: 75%;
+    margin: 0 auto;
+}
+.skills {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#about .skill {
+    width: 30%;
+    font-size: 20px;
+}
+#about .skill-text {
+    width: 70%;
+    font-size: 20px;
+    color: #777;
+}
+.contact {
+    width: 60%;
+    margin: 0 auto 7em auto;
+}
+.contact .center {
+    font-size: 30px;
+}
+.contact .left span {
+    color: 
+    #777;
+}
+.contact .left {
+    width: 75%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 20px;
+}
+#works {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.work {
+    width: 30%;
+    height: auto;
+}
+.work-bg {
+    width: 100%;
+    text-align: center;
+}
+.work-bg .link {
+    color: #111;
+    padding: 10px;
+    outline: 1px solid #111;
+    transition: 0.3s;
+}
+.work-bg .link:hover {
+    color: #ddd;
+    background-color: #111;
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.work-bg img {
+    width: 100%;
+    height: 209px;
+    object-fit: cover;
+    object-position: 0 0;
+}
+.feature {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: rgba(17, 17, 17, 0.8);
+    z-index: 1;
+}
+.feature-bg {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+}
+.feature-img {
+    position: relative;
+    width: 40%;
+    height: auto;
+    margin: 20px;
+}
+.feature-img img {
+    width: 100%;
+    height: auto;
+}
+.feature-text {
+    position: relative;
+    width: 60%;
+    text-align: center;
+}
+.feature-text h3 {
+    font-size: 30px;
+    color: #ddd;
+}
+.feature-text a {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+.feature-text .link {
+    color: #ddd;
+    padding: 10px;
+    outline: 1px solid #ddd;
+    transition: 0.3s;
+}
+.feature-text .link:hover {
+    color: #111;
+    background-color: #ddd;
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.feature-text img {
+    width: 80%;
+    height: auto;
+}
+.feature-text button {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+.introduct {
+    color: #ddd;
+    text-align: left;
+    margin: auto 70px;
+}
+.introduct-heading {
+    color: #f5df4d;
+    font-size: 20px;
+    line-height: 50px;
+}
+.annotation {
+    color: #f44;
+    font-size: 40px;
+}
+.red-text {
+    color: #f44;
+    font-size: 1em;
+}
+.at1 {
+    position: absolute;
+    top: 15%;
+    left: 47%;
+}
+.at2 {
+    position: absolute;
+    top: 62%;
+    left: 41%;
+}
+.at3 {
+    position: absolute;
+    top: 92%;
+    left: 88%;
+}
+.at4 {
+    position: absolute;
+    top: 18%;
+    left: 12%;
+}
+.at5 {
+    position: absolute;
+    top: 44%;
+    left: 41%;
+}
+.at6 {
+    position: absolute;
+    top: 83%;
+    left: 16%;
+}
+.at7 {
+    position: absolute;
+    top: 1%;
+    left: 24%;
+}
+.at8 {
+    position: absolute;
+    top: 74%;
+    left: 5%;
+}
+.at9 {
+    position: absolute;
+    top: 37%;
+    left: 20%;
+}
+#about {
+    width: 80%;
+    margin: 0 auto;
+}
+#about p {
+    font-size: 30px;
+}
+.center {
+    text-align: center;
+}
+#about .left {
+    text-align: left;
+    font-size: 20px;
+}
+#about .career {
+    width: fit-content;
+}
+#about .contact {
+    width: fit-content;
+}
+#about .license .left{
+    text-align: center;
+}
+#about .left span {
+    color: #777;
+}
+/* モーダル */
+#Modal0 {
+    display: none;
+    align-items: center;
+}
+#Modal1 {
+    display: none;
+    align-items: center;
+}
+#Modal2 {
+    display: none;
+    align-items: center;
+}
+.openbtn {
+    border-radius: 0;
+    color: #111;
+    outline: 1px solid #111;
+    margin: auto 1em;
+    height: 3em;
+    justify-content: center;
+    transition: 0.3s;
+}
+.openbtn:hover {
+    color: #ddd;
+    background-color: #111;
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.close-btn {
+    border-radius: 0;
+    color: #ddd;
+    outline: 1px solid #ddd;
+    margin: auto 1em;
+    height: 3em;
+    justify-content: center;
+    transition: 0.3s;
+}
+.close-btn:hover {
+    color: #111;
+    background-color: #ddd;
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.feature-text .btn-bottom {
+    position: absolute;
+    top: auto;
+    right: 1em;
+    bottom: 1em;
+}
+.site-title {
+    display: flex;
+    justify-content: center;
+}
+.last-introduct {
+    padding-bottom: 7em;
+}
+.thanks {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 7em;
+}

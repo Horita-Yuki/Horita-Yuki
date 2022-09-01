@@ -1,0 +1,19 @@
+@charset "utf-8";
+@import url("css/reset.css");			/*リセットcss*/
+@import url("css/base.css");			/*wrapper,hedder,footer等のcss*/
+@import url("css/common.css");			/*aタグやh1タグ等の汎用css*/
+@import url("css/module.css");			/*コンテンツのcss*/
+@import url("css/button-hide.css");			/*ボタン隠しのcss*/
+@import url("css/text-underbar.css");			/*テキスト下線のcss*/
+@import url("css/drawer-menu.css");
+@import url("css/fadeIn.css");
+@media screen and (max-width:960px) {
+	img {
+		max-width: 960px;
+	}
+}
+@media screen and (max-width:480px) {
+	img {
+		max-width: 480px;
+	}
+}

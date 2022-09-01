@@ -1,0 +1,43 @@
+/*wrapper,hedder,footer等のcss*/
+body {
+  background-color: #f3eed5;
+}
+#inner-wrapper {
+  z-index: -1;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 70px;
+  background-color: #f7e1b8;
+  background-image: url("../images/texture2.jpg");
+  background-color: rgba(255, 255, 255, 0.6);
+  background-blend-mode: lighten;
+}
+/*ヘッダーここから*/
+#header-nav {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+#header-nav p {
+  margin: 10px 40px 0 40px;
+  line-height: 40px;
+  font-size: 40px;
+	color: #000;
+  text-align: center;
+}
+#header-nav p span {
+  font-size: 20px;
+}
+/*ヘッダーここまで*/
+/*フッターここから*/
+footer {
+  height: 100px;
+  background-color: rgba(0,0,0,0.8);
+}
+#footer {
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+}
+/*フッターここまで*/
+/*レスポンシブ*/
