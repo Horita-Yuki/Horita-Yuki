@@ -7,25 +7,26 @@
             <div id="checkbox-list">
                 <?php
                 $num = 0;
-                $terms = get_terms('post_tag', array(
-                    'orderby' => 'name'  //色々指定できます
-                    ) );
+                $terms = get_terms(
+                    'post_tag',
+                     array(
+                    'orderby' => 'name'  //名前順で表示
+                ));
                     if(!is_wp_error($terms)):
                         foreach($terms as $term):
-
                 //チェックリスト値の受け渡し
-                $t_check=filter_input(INPUT_GET,'check01[]',FILTER_DEFAULT,["options" => ["default" => []],"flags" => FILTER_REQUIRE_ARRAY]);
-                $checked["check01[]"] = [ $term->term_id => ""];
-                foreach((array)$t_check as $val){
-                $checked["check01[]"][$val]="checked";
-                }
-                ?>
-                <div class="checkbox-one">
-                    <label>
-                        <input type="checkbox" id="<?php echo 'checkbox'.$num ?>" name="check01[]" value="<?php echo $term->term_id; ?>" <?php echo $checked["check01[]"][$term->term_id]; ?>>
-                        <div class="checkbox-before" id="<?php echo 'checkbox-before'.$num ?>"></div><?php echo $term->name . '(' . $term->count . ')'; ?>
-                    </label>
-                </div>
+                            $t_check=filter_input(INPUT_GET,'check01[]',FILTER_DEFAULT,["options" => ["default" => []],"flags" => FILTER_REQUIRE_ARRAY]);
+                            $checked["check01[]"] = [ $term->term_id => ""];
+                            foreach((array)$t_check as $val){
+                                $checked["check01[]"][$val]="checked";
+                            }
+                            ?>
+                            <div class="checkbox-one">
+                                <label>
+                                    <input type="checkbox" id="<?php echo 'checkbox'.$num ?>" name="check01[]" value="<?php echo $term->term_id; ?>" <?php echo $checked["check01[]"][$term->term_id]; ?>>
+                                    <div class="checkbox-before" id="<?php echo 'checkbox-before'.$num ?>"></div><?php echo $term->name . '(' . $term->count . ')'; ?>
+                                </label>
+                            </div>
                 <?php 
                         $num += 1;
                         endforeach; 

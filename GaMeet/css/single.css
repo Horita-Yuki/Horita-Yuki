@@ -34,8 +34,9 @@
 #single-page #wrapper #single-contents-box img {
   display: block;
   margin: 0 auto;
-  width: 90%;
-  height: auto;
+  width: auto;
+  max-width: 90%;
+  max-height: 60vh;
 }
 #single-page #wrapper #single-contents-box .main-text {
   padding: 2rem 6rem;

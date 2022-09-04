@@ -74,6 +74,11 @@
 							background-color: var.$accent-color1;
 							transition: 0.3s;
 						}
+						#checkbox5:checked ~ #checkbox-before5 {
+							transform: rotate(45deg);
+							background-color: var.$accent-color1;
+							transition: 0.3s;
+						}
 					}
 				}
 			}

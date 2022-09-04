@@ -128,6 +128,7 @@ legend {
   content: "\e314";
   display: block;
   color: #F5F5F5;
+  line-height: 1.47em;
   margin: 0 0.5rem;
   transform: scale(2);
 }
@@ -136,6 +137,7 @@ legend {
   content: "\e315";
   display: block;
   color: #F5F5F5;
+  line-height: 1.47em;
   margin: 0 0.5rem;
   transform: scale(2);
 }
@@ -957,6 +959,11 @@ button {
   background-color: #F5DF4D;
   transition: 0.3s;
 }
+#search #search-box #checkbox #checkbox-list .checkbox-one label #checkbox5:checked ~ #checkbox-before5 {
+  transform: rotate(45deg);
+  background-color: #F5DF4D;
+  transition: 0.3s;
+}
 #search #search-box #submit {
   margin-left: 1rem;
 }
@@ -1322,8 +1329,9 @@ button {
 #single-page #wrapper #single-contents-box img {
   display: block;
   margin: 0 auto;
-  width: 90%;
-  height: auto;
+  width: auto;
+  max-width: 90%;
+  max-height: 60vh;
 }
 #single-page #wrapper #single-contents-box .main-text {
   padding: 2rem 6rem;

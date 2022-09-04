@@ -31,8 +31,8 @@
                                 $content = strip_tags($content,'<p>');//コンテンツのhtmlタグを無くす(今回はpタグを残してh2タグを消している。本文main-textはcssで非表示に)
                                 $title = "【{$title}】{$content}";//game-newsの場合は【題名】小題〜で表示
                             }
-                            if (mb_strlen ($title) > 60) {//タイトルを文字数制限付きで出力する
-                                $title = mb_substr ($title, 0, 60) ; 
+                            if (mb_strlen ($title) > 33) {//タイトルを文字数制限付きで出力する
+                                $title = mb_substr ($title, 0, 33) ; 
                                 print $title . '...';
                             } else if ($cat_name === 'infomation-news') {
                                 print $title;

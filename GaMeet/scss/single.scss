@@ -36,8 +36,9 @@
             img {
                 display: block;
                 margin: 0 auto;
-                width: 90%;
-                height: auto;
+                width: auto;
+                max-width: 90%;
+                max-height: 60vh;
             }
             .main-text {
                 padding: 2rem 6rem;

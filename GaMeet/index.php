@@ -7,28 +7,28 @@
 					<div id="square"><div id="insquare"></div></div>
 					<?php  //wordpressの基本的な出力
 						$args = [//ループ出力のための設定
-							'post_type' => 'post',
+							'post_type' => 'post',//投稿ページからデータを取得する
 							'posts_per_page' => 8,//投稿ページのデータを指定した件数取得
-							'category_name' => 'game-Introduction,game-News'
-						];//投稿ページからデータを取得する
+							'category_name' => 'game-Introduction,game-News'//カテゴリーを絞る
+						];
 						$num = 0;
 						$the_query = new WP_Query($args);
-							if($the_query -> have_posts()): //データが存在するかチェック(お約束)
-								while($the_query -> have_posts()):  //データをループし、表示させる準備(お約束)
-									$the_query -> the_post(); //ループされたデータを1件分取得(お約束)
-									
+						if($the_query -> have_posts()): //データが存在するかチェック(お約束)
+							while($the_query -> have_posts()):  //データをループし、表示させる準備(お約束)
+								$the_query -> the_post(); //ループされたデータを1件分取得(お約束)
+								
 					?>
-						<?php $title = get_the_title(); $content = get_the_content(); $title =strip_tags($title); $content = strip_tags($content,'<p><br>');?>
-						<div class="<?php print "slide-img "."slide_img".$num ?>">
-							<a href="<?php the_permalink(); ?>">
-								<?php the_post_thumbnail(); //サムネイルを出力 ?>
-								<p><?php print "【{$title}】  {$content}" ?></p>
-							</a>
-						</div>
+					<?php $title = get_the_title(); $content = get_the_content(); $title = strip_tags($title); $content = strip_tags($content,'<p><br>');//タイトル + キャッチコピーの形式で表示させるため、不要なタグを取り払う?>
+					<div class="<?php print "slide-img "."slide_img".$num ?>">
+						<a href="<?php the_permalink(); ?>">
+							<?php the_post_thumbnail(); //サムネイルを出力 ?>
+							<p><?php print "【{$title}】  {$content}" //タイトル + キャッチコピーの形式で表示させる?></p>
+						</a>
+					</div>
 					<?php
-									$num += 1;
-								endwhile;
-							endif;
+								$num += 1;
+							endwhile;
+						endif;
 					?>
 					<button id="prev-button"></button>
 					<button id="next-button"></button>
@@ -42,7 +42,7 @@
 						<div class="infoTable">
 							<?php  //wordpressの基本的な出力
 								$args = [
-									'post_type' => 'post',
+									'post_type' => 'post',//投稿ページのみ取得
 									'orderby' => 'rand',// ランダムで表示
 									'posts_per_page' => 9,//投稿ページのデータを全件取得
 									'category_name' => 'game-Introduction',//タグを参照して表示
@@ -124,7 +124,7 @@
 								<p>
 									<time datetime="<?php print get_the_date('Y-m-d') ?>"><?php print get_the_date('Y/m/d');  //投稿時間を出力する ?></time>
 									<?php if (mb_strlen ($post -> post_title) > 37) {
-										$title= mb_substr ($post -> post_title, 0, 37) ;
+										$title = mb_substr ($post -> post_title, 0, 37) ;
 											print $title . '...';
 										} else {
 											print $post->post_title;

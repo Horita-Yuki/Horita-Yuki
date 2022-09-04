@@ -75,6 +75,11 @@
   background-color: #F5DF4D;
   transition: 0.3s;
 }
+#search #search-box #checkbox #checkbox-list .checkbox-one label #checkbox5:checked ~ #checkbox-before5 {
+  transform: rotate(45deg);
+  background-color: #F5DF4D;
+  transition: 0.3s;
+}
 #search #search-box #submit {
   margin-left: 1rem;
 }
