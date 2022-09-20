@@ -1,47 +1,50 @@
 @charset "UTF-8";
 /*コンテンツのcss*/
-#search {
+.search-placement {
+  width: 44.5vw;
+  height: 44.5vw;
   position: relative;
-  left: -10%;
-  width: 46vw;
-  height: 46vw;
+  left: -2%;
+}
+.search-placement #search {
+  width: 100%;
+  height: 100%;
   transform: rotate(45deg);
   background: #1F1D36;
-  margin: auto;
   padding: 1rem;
   color: #C2C6C9;
   z-index: 1;
 }
-#search #search-box {
+.search-placement #search #search-box {
   position: relative;
   left: 27%;
   top: -9%;
   transform: rotate(-45deg) scale(1.2);
 }
-#search #search-box h2 {
+.search-placement #search #search-box h2 {
   color: #F5DF4D;
   margin: 0 0 4.5rem 4.5rem;
 }
-#search #search-box input[type=search] {
+.search-placement #search #search-box input[type=search] {
   margin-left: 2.6rem;
 }
-#search #search-box #checkbox #checkbox-list .checkbox-one {
+.search-placement #search #search-box #checkbox #checkbox-list .checkbox-one {
   display: flex;
 }
-#search #search-box #checkbox #checkbox-list .checkbox-one label {
+.search-placement #search #search-box #checkbox #checkbox-list .checkbox-one label {
   display: block;
   margin: 1rem auto 1rem 1rem;
   transition: 0.3s;
 }
-#search #search-box #checkbox #checkbox-list .checkbox-one label:hover {
+.search-placement #search #search-box #checkbox #checkbox-list .checkbox-one label:hover {
   color: #F5DF4D;
   transform: scale(1.01);
   transition: 0.3s;
 }
-#search #search-box #checkbox #checkbox-list .checkbox-one label input[type=checkbox] {
+.search-placement #search #search-box #checkbox #checkbox-list .checkbox-one label input[type=checkbox] {
   visibility: hidden;
 }
-#search #search-box #checkbox #checkbox-list .checkbox-one label .checkbox-before {
+.search-placement #search #search-box #checkbox #checkbox-list .checkbox-one label .checkbox-before {
   transform: rotate(0deg);
   display: inline-block;
   margin: auto 0.5rem;
@@ -50,37 +53,37 @@
   outline: 1px solid #F5F5F5;
   transition: 0.3s;
 }
-#search #search-box #checkbox #checkbox-list .checkbox-one label #checkbox0:checked ~ #checkbox-before0 {
+.search-placement #search #search-box #checkbox #checkbox-list .checkbox-one label #checkbox0:checked ~ #checkbox-before0 {
   transform: rotate(45deg);
   background-color: #F5DF4D;
   transition: 0.3s;
 }
-#search #search-box #checkbox #checkbox-list .checkbox-one label #checkbox1:checked ~ #checkbox-before1 {
+.search-placement #search #search-box #checkbox #checkbox-list .checkbox-one label #checkbox1:checked ~ #checkbox-before1 {
   transform: rotate(45deg);
   background-color: #F5DF4D;
   transition: 0.3s;
 }
-#search #search-box #checkbox #checkbox-list .checkbox-one label #checkbox2:checked ~ #checkbox-before2 {
+.search-placement #search #search-box #checkbox #checkbox-list .checkbox-one label #checkbox2:checked ~ #checkbox-before2 {
   transform: rotate(45deg);
   background-color: #F5DF4D;
   transition: 0.3s;
 }
-#search #search-box #checkbox #checkbox-list .checkbox-one label #checkbox3:checked ~ #checkbox-before3 {
+.search-placement #search #search-box #checkbox #checkbox-list .checkbox-one label #checkbox3:checked ~ #checkbox-before3 {
   transform: rotate(45deg);
   background-color: #F5DF4D;
   transition: 0.3s;
 }
-#search #search-box #checkbox #checkbox-list .checkbox-one label #checkbox4:checked ~ #checkbox-before4 {
+.search-placement #search #search-box #checkbox #checkbox-list .checkbox-one label #checkbox4:checked ~ #checkbox-before4 {
   transform: rotate(45deg);
   background-color: #F5DF4D;
   transition: 0.3s;
 }
-#search #search-box #checkbox #checkbox-list .checkbox-one label #checkbox5:checked ~ #checkbox-before5 {
+.search-placement #search #search-box #checkbox #checkbox-list .checkbox-one label #checkbox5:checked ~ #checkbox-before5 {
   transform: rotate(45deg);
   background-color: #F5DF4D;
   transition: 0.3s;
 }
-#search #search-box #submit {
+.search-placement #search #search-box #submit {
   margin-left: 1rem;
 }
 
@@ -90,12 +93,12 @@
 }
 .info #show-more-game {
   position: relative;
-  left: -30%;
+  left: -22%;
 }
 .info #show-more-game .show-more2 {
   margin: 2% auto;
   position: relative;
-  top: 106%;
+  top: 103%;
 }
 .info #show-more-game .show-more2 .end-arrow2 {
   cursor: pointer; /*マウスカーソルを指マークに*/
@@ -124,11 +127,9 @@
 }
 .info .placement {
   position: relative;
-  left: -10%;
-  justify-content: center;
+  left: -4%;
   width: 50vw;
   height: 50vw;
-  margin: auto;
   z-index: 2;
 }
 .info .placement .infoTable {
@@ -148,6 +149,33 @@
   box-sizing: border-box;
   outline: 1px solid #111;
   filter: drop-shadow(0px 1px 1px #111);
+}
+.info .placement .infoTable .gamethumb:nth-child(1) {
+  order: 3;
+}
+.info .placement .infoTable .gamethumb:nth-child(2) {
+  order: 2;
+}
+.info .placement .infoTable .gamethumb:nth-child(3) {
+  order: 6;
+}
+.info .placement .infoTable .gamethumb:nth-child(4) {
+  order: 1;
+}
+.info .placement .infoTable .gamethumb:nth-child(5) {
+  order: 5;
+}
+.info .placement .infoTable .gamethumb:nth-child(6) {
+  order: 9;
+}
+.info .placement .infoTable .gamethumb:nth-child(7) {
+  order: 4;
+}
+.info .placement .infoTable .gamethumb:nth-child(8) {
+  order: 8;
+}
+.info .placement .infoTable .gamethumb:nth-child(9) {
+  order: 7;
 }
 .info .placement .infoTable .gamethumb img {
   will-change: transform;

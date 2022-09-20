@@ -16,6 +16,7 @@
                 height: auto;
                 margin: 0 auto;
                 // padding: 2rem 0;
+                outline: 1px solid var.$base-color;
             }
             h1 {
                 //display: none;//暫定的非表示
@@ -39,6 +40,7 @@
                 width: auto;
                 max-width: 90%;
                 max-height: 60vh;
+                outline: 1px solid var.$base-color;
             }
             .main-text {
                 padding: 2rem 6rem;

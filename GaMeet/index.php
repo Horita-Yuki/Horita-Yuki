@@ -35,18 +35,21 @@
 					</div>						<!--slide-boxここまで-->
 				</div>							<!---キービジュアルここまで--->
 				<div class="info">
-					<div id="search">		<!--検索フォーム-->
-						<?php get_search_form(); ?>
-					</div>						<!--検索フォーム終わり-->
+					<div class="search-placement">
+						<div id="search">		<!--検索フォーム-->
+							<?php get_search_form(); ?>
+						</div>						<!--検索フォーム終わり-->
+					</div>
 					<div class="placement">
 						<div class="infoTable">
 							<?php  //wordpressの基本的な出力
 								$args = [
 									'post_type' => 'post',//投稿ページのみ取得
-									'orderby' => 'rand',// ランダムで表示
 									'posts_per_page' => 9,//投稿ページのデータを全件取得
 									'category_name' => 'game-Introduction',//タグを参照して表示
-							];//投稿ページからデータを取得する
+									'meta_key' => 'views',//閲覧数を取得
+									'orderby' => 'meta_value_num',//閲覧数で並び替え
+								];//投稿ページからデータを取得する
 							$the_query = new WP_Query($args);
 								if($the_query -> have_posts()): //データが存在するかチェック(お約束)
 									while($the_query -> have_posts()):  //データをループし、表示させる準備(お約束)
@@ -70,7 +73,7 @@
 				</div><!--infoここまで-->
 				<div id="release-date">
 					<h2>ゲームソフト(発売日順)</h2>
-					<ul class="slider2">
+					<ul id="slider">
 						<?php  //wordpressの基本的な出力
 							$args = [//ループ出力のための設定
 								'post_type' => 'post',
@@ -82,7 +85,7 @@
 								while($the_query -> have_posts()):  //データをループし、表示させる準備(お約束)
 									$the_query -> the_post(); //ループされたデータを1件分取得(お約束)
 						?>
-						<li>
+						<li class="slide-image-box">
 							<a href="<?php the_permalink(); ?>">
 								<p><time datetime="<?php print get_the_date('Y-m-d') ?>"><?php print get_the_date('Y/n/j');  //投稿時間を出力する ?></time></p>
 								<?php the_post_thumbnail(); //サムネイルを出力?>
@@ -93,12 +96,14 @@
 								endwhile;
 							endif;
 						?>
-						<div class="show-more">
-							<a href="<?php print esc_url(home_url('/')); ?>game#header" id="show-more-game">
-							<div class="end-arrow"></div>
-							<p>もっと見る</p>
-							</a>
-						</div>
+						<li class="slide-image-box">
+							<div class="show-more">
+								<a href="<?php print esc_url(home_url('/')); ?>game#header" id="show-more-game">
+								<div class="end-arrow"></div>
+								<p>もっと見る</p>
+								</a>
+							</div>
+						</li>
 					</ul>
 					<div id="slidebar-box">
 						<input id="slidebar" type="range" name="release-date" min="0" max="75" step="1" value="0"> 

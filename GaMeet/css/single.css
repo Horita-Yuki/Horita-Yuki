@@ -16,6 +16,7 @@
   width: 100%;
   height: auto;
   margin: 0 auto;
+  outline: 1px solid #F5F5F5;
 }
 #single-page #wrapper #title-box h1 {
   text-align: center;
@@ -37,6 +38,7 @@
   width: auto;
   max-width: 90%;
   max-height: 60vh;
+  outline: 1px solid #F5F5F5;
 }
 #single-page #wrapper #single-contents-box .main-text {
   padding: 2rem 6rem;

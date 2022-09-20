@@ -2,21 +2,6 @@
 /*==================================================
 スライダーのためのcss
 ===================================*/
-.slider2 { /*横幅94%で左右に余白を持たせて中央寄せ*/
-  margin: 0 auto;
-  background-color: #1F1D36;
-}
-.slider2 img {
-  width: 100%; /*スライダー内の画像を横幅100%に*/
-  height: auto;
-  outline: 5px solid #F5DF4D;
-}
-.slider2 img:hover {
-  filter: brightness(120%);
-  transform: scale(1.05);
-  transition: 0.3s;
-}
-
 #release-date {
   position: relative;
   margin: 1rem auto;
@@ -28,15 +13,37 @@
   color: #F5DF4D;
   padding: 1rem;
 }
-#release-date ul li {
-  margin: 1rem;
+#release-date #slider { /*横幅94%で左右に余白を持たせて中央寄せ*/
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: #1F1D36;
 }
-#release-date ul .release-date {
+#release-date #slider img {
+  width: 100%; /*スライダー内の画像を横幅100%に*/
+  height: auto;
+  outline: 5px solid #F5DF4D;
+}
+#release-date #slider img:hover {
+  filter: brightness(120%);
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+#release-date #slider li {
+  padding: 1rem;
+  width: 33.4vw;
+  box-sizing: border-box;
+}
+#release-date #slider .release-date {
   color: #C2C6C9;
   text-align: right;
   font-size: 1.5rem;
 }
-#release-date ul p {
+#release-date #slider p {
   color: #C2C6C9;
   text-align: center;
 }
@@ -44,7 +51,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 1rem;
+  padding-bottom: 1.5rem;
 }
 #release-date #slidebar-box::before {
   font-family: "Material Icons";
@@ -88,7 +95,7 @@
 }
 
 .show-more {
-  margin: 2% auto;
+  margin: 27% auto;
   position: relative;
 }
 .show-more .end-arrow {
@@ -118,4 +125,8 @@
 .show-more p {
   font-size: 1.5rem;
   margin-top: 3rem;
+}
+
+.ban-click {
+  pointer-events: none;
 }/*# sourceMappingURL=release-slideshow.css.map */

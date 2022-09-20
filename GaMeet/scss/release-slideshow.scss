@@ -2,20 +2,7 @@
 スライダーのためのcss
 ===================================*/
 @use 'variables' as var;
-.slider2 {/*横幅94%で左右に余白を持たせて中央寄せ*/
-    margin:0 auto;
-    background-color: var.$sub-color;
-    img {
-        width: 100%;/*スライダー内の画像を横幅100%に*/
-        height: auto;
-		outline: 5px solid var.$accent-color1;
-		&:hover {
-			filter: brightness(120%);
-			transform: scale(1.05);
-			transition: 0.3s;
-		}
-    }
-}
+
 //ゲーム発売日ここから
 #release-date {
 	position: relative;
@@ -27,9 +14,27 @@
 		color: var.$accent-color1;
 		padding: 1rem;
 	}
-	ul {
+	#slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: hidden;
+		width: fit-content;
+		margin:0 auto;
+		background-color: var.$sub-color;
+		img {
+			width: 100%;/*スライダー内の画像を横幅100%に*/
+			height: auto;
+			outline: 5px solid var.$accent-color1;
+			&:hover {
+				filter: brightness(120%);
+				transform: scale(1.05);
+				transition: 0.3s;
+			}
+		}
 		li {
-			margin: 1rem;
+			padding: 1rem;
+			width:33.4vw;
+			box-sizing: border-box;
 		}
 		.release-date {
 			color: var.$accent-color2;
@@ -45,7 +50,7 @@
 		display: flex;
 		justify-content: center;
 		width: 100%;
-		padding: 1rem;
+		padding-bottom: 1.5rem;
 		&::before {
 			font-family: 'Material Icons';
 			content: "\E314";
@@ -89,7 +94,7 @@
 	}
 }
 .show-more {
-	margin: 2% auto;
+	margin: 27% auto;
 	position: relative;
 	.end-arrow {
 		cursor: pointer;/*マウスカーソルを指マークに*/
@@ -119,5 +124,9 @@
 		font-size: 1.5rem;
 		margin-top: 3rem;
 	}
+}
+
+.ban-click{//ドラッグとクリックを一緒にしないようにするクラス
+	pointer-events: none;
 }
 //ゲーム発売日ここまで

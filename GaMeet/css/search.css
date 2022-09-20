@@ -31,6 +31,7 @@
 #search-result #wrapper #search-result-box #search-result-thumb .gamethumb img {
   width: 100%;
   height: auto;
+  outline: 1px solid #F5F5F5;
 }
 #search-result #wrapper #search-result-box #search-result-thumb h2 {
   display: inline-block;
