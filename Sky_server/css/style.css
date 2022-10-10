@@ -1,0 +1,755 @@
+:root {
+    --white: #fdfdfd;
+    --black: #111;
+    --babyblue: #e8f0ff;
+    --skyblue: #66b3f5;
+    --blue: #01429b;
+    --pink: #ff9183;
+    --yellow: #ffff4e;
+    --dark-yellow: #e3e349;
+}
+* {
+    /* outline: 1px solid #f00; */
+    text-decoration: none;
+}
+html {
+    font-size: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: var(--white);
+}
+.br-sp {
+    display: none;
+}
+.button {
+    width: 375px;
+    height: 70px;
+    background-color: var(--yellow);
+    border-radius: 15px;
+    margin: 16rem auto 5rem 5rem;
+    filter: drop-shadow(0 10px 0 var(--dark-yellow));
+}
+.button p {
+    color: var(--blue)!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    margin: auto 0!important;
+}
+.button:hover {
+    transform: translateY(10px);
+    filter: drop-shadow(0 0 0 var(--dark-yellow));
+    transition: 0.3s;
+}
+
+/*ヘッダーここから*/
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color: var(--skyblue);
+    filter: drop-shadow(0 1px 3px var(--black));
+    z-index: 10;
+}
+#header-logo {
+    margin: 2rem 1rem 2rem 5rem;
+}
+header h1 {
+    color: var(--white);
+    font-size: 3.3rem;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    display: inline-block;
+    margin: auto 2rem 1.5rem 0;
+}
+header h1 span {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+header nav {
+    width: 55%;
+    margin: 0 3rem 0 auto;
+}
+#header-nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+#header-nav li {
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-right: 3rem;
+}
+#header-nav li a {
+    color: var(--white);
+}
+#header-nav li a:hover {
+    color: var(--blue);
+}
+#header-nav li:hover {
+    color: var(--blue);
+}
+#header-nav li:hover .sub-menu-box {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 1s;
+    transition: 0.1s;
+}
+.sub-menu-box:hover {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 1s;
+    transition: 0.1s;
+}
+#header-nav .button {
+    width: 14rem;
+    margin: auto 3rem auto auto;
+}
+#header-nav .button li {
+    color: var(--blue);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-menu-box {
+    position: absolute;
+    outline: 1px solid var(--black);
+    background-color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5rem 5rem 0 5rem;
+    width: 60rem;
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: 1s;
+    transition: 0.1s;
+}
+#service .sub-menu-box {
+    left: 25%;
+    top: 105%;
+}
+#support .sub-menu-box {
+    left: 45%;
+    top: 105%;
+}
+.sub-menu-contents {
+    width: 40%;
+    margin-bottom: 5rem;
+}
+.sub-menu-contents h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--blue);
+    margin-bottom: 2rem;
+}
+.sub-menu-contents a p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.7rem;
+    color: #2359a3;
+}
+#hamburger-icon {
+    display: none;
+}
+/*ヘッダーここまで*/
+
+/*メインビジュアルここから*/
+#main-visual {
+    position: relative;
+    padding-top: 11rem;
+    background-color: var(--babyblue);
+    padding-bottom: 4rem;
+}
+#main-visual h2 {
+    color: var(--pink);
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 7rem auto 7rem 5rem;
+}
+#main-visual p {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-left: 5rem;
+    line-height: 5rem;
+}
+#mockup {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+/*メインビジュアルここまで*/
+
+/*選ばれる理由ここから*/
+#reason-heading {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 10rem auto;
+    color: var(--pink);
+}
+#reason {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    padding-bottom: 10rem;
+}
+.reason {
+    outline: 5px solid var(--blue);
+    border-radius: 50px;
+    width: 25%;
+    height: 38rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.reason img {
+    margin: 4rem auto;
+}
+/*選ばれる理由ここまで*/
+
+/*選ばれる理由1〜3ここから*/
+#reason1 {
+    background-color: var(--babyblue);
+    padding-bottom: 2.5rem;
+}
+#reason2 {
+    background-color: var(--white);
+    padding-bottom: 2.5rem;
+}
+#reason3 {
+    background-color: var(--babyblue);
+    padding-bottom: 2.5rem;
+}
+#reason1 .square {
+    background-color: var(--white);
+}
+#reason2 .square {
+    background-color: var(--babyblue);
+}
+#reason3 .square {
+    background-color: var(--white);
+}
+.square {
+    width: 10rem;
+    height: 10rem;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -8%;
+    left: 17%;
+}
+.reason-detail {
+    position: relative;
+}
+.reason-detail h3{
+    margin-top: 10rem;
+    margin-left: 5rem;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 2.5rem 5rem;
+    background-color: var(--white);
+}
+#reason2.reason-detail h3 {
+    background-color: var(--babyblue);
+}
+.reason-detail h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--pink);
+    margin: 5rem auto 5rem 5rem;
+}
+.reason-detail p {
+    margin-left: 5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 5rem;
+    color: var(--black);
+}
+.reason-detail .button {
+    width: 28rem;
+    margin: 3.5rem auto 2.5rem 33rem;
+}
+.reason-detail img {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+}
+/*選ばれる理由1〜3ここまで*/
+
+/*プラン一覧ここから*/
+#plan {
+    text-align: center;
+    padding-bottom: 6.5rem;
+}
+#plan-heading h2 {
+    width: 35rem;
+    display: inline-block;
+    font-size: 7rem;
+    font-weight: 700;
+    border-image: linear-gradient(90deg, var(--skyblue), var(--blue)) 1/0 0 2rem;
+    border-style: solid;
+    margin: 6.5rem auto;
+    padding-bottom: 1rem;
+}
+#plan-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+#lite-plan .plan-detail {
+    background-color: var(--skyblue);
+}
+#standard-plan .plan-detail {
+    background-color: #6671F5;
+}
+#high-speed-plan .plan-detail {
+    background-color: var(--blue);
+}
+.plan {
+    width: 30%;
+    height: 77rem;
+    outline: 1px solid var(--black);
+}
+.plan-detail {
+    width: 100%;
+    height: 31rem;
+}
+.plan-detail h3 {
+    color: var(--white);
+    font-size: 4rem;
+    font-weight: 400;
+    padding-top: 3rem;
+}
+.plan-detail p {
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: 400;
+}
+.plan-detail .price {
+    font-size: 5rem;
+    font-weight: 500;
+    margin: 1.5rem auto;
+}
+.plan-detail .price span {
+    font-size: 6.5rem;
+    font-weight: 700;
+}
+.plan-text {
+    display: flex;
+    align-items: center;
+}
+.plan-text p {
+    width: 50%;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 1.5rem auto;
+}
+.plan-text p span {
+    font-size: 3rem;
+    font-weight: 700;
+}
+/*プラン一覧ここまで*/
+
+/*お試しここから*/
+#trial {
+    background-color: var(--skyblue);
+    text-align: center;
+    padding-bottom: 3.5rem;
+}
+#trial h2 {
+    font-size: 7rem;
+    font-weight: 700;
+    color: var(--blue);
+    text-align: center;
+    padding-top: 3.5rem;
+    margin-bottom: 3.5rem;
+}
+#trial h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 6rem;
+}
+#trial .button {
+    margin: 6rem auto;
+}
+#news {
+    padding-bottom: 6.5rem;
+}
+#news h2 {
+    font-size: 7rem;
+    font-weight: 500;
+    margin: 6.5rem auto;
+    text-align: center;
+} 
+.news-contents:nth-child(odd) {
+    background-color: var(--babyblue);
+}
+.news-contents {
+    width: 97rem;
+    padding: 3rem;
+    margin: 0 auto;
+}
+.news-contents a {
+    width: 100%;
+    display: flex;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--blue);
+}
+.news-contents a:hover {
+    color: var(--skyblue);
+}
+.news-contents time {
+    width: 20%;
+    text-align: center;
+}
+.news-contents p {
+    width: 80%;
+    text-align: center;
+}
+/*お試しここまで*/
+
+/*フッターここから*/
+footer {
+    display: flex;
+    background-color: var(--skyblue);
+}
+#footer-logo-box {
+    width: 32%;
+    position: relative;
+}
+#footer-logo {
+    position: absolute;
+    left: 5rem;
+    bottom: 5rem;
+}
+small {
+    font-size: 1.6rem;
+}
+.footer-nav-box {
+    width: 68%;
+    display: flex;
+    gap: 8rem;
+}
+.footer-nav {
+    width: 25%;
+    margin: 6.5rem auto 9rem auto;
+    color: var(--white);
+}
+.footer-nav-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+.footer-nav-contents {
+    margin-bottom: 1rem;
+}
+.footer-nav-contents a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--white);
+}
+.footer-nav-contents a:hover {
+    color: var(--blue);
+}
+/*フッターここまで*/
+
+/*レスポンシブここから*/
+@media screen and (max-width: 480px){
+    .br-sp {
+        display: block;
+    }
+    /*ヘッダーここから*/
+    #header-logo {
+        width: 6.6rem;
+        height: auto;
+        margin: 3rem 1rem 2rem 2rem;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    header h1 span {
+        font-size: 1.2rem;
+        margin-left: 0.5rem;
+    }
+    header nav {
+        position: relative;
+        width: 1px;
+    }
+    #header-nav {
+        display: none;
+    }
+    #hamburger-icon {
+        display: block;
+        width: 2.5rem;
+        height: 2.5rem;
+        position: absolute;
+        right: -1rem;
+        top: 35%;
+    }
+    input {
+        display: none;
+    }
+    #hamburger-icon .bar {
+        width: 100%;
+        height: 0.5rem;
+        background-color: var(--white);
+        border-radius: 5px;
+        margin: 0.5rem;
+    }
+    #hamburger-menu {
+        position: absolute;
+        top: 241%;
+        right: -30px;
+        background-color: var(--white);
+        width: 75vw;
+        height: 100vh;
+        display: none;
+    }
+    #hamburger-menu #header-nav {
+        display: block;
+    }
+    #hamburger-menu #service {
+        margin-top: 7rem;
+    }
+    #hamburger-menu ul li {
+        color: var(--blue);
+        margin: 4rem auto 4rem 4.5rem;
+    }
+    #hamburger-menu ul li a {
+        color: var(--blue);
+    }
+    #hamburger-menu ul li:hover {
+        color: var(--skyblue);
+    }
+    #hamburger-menu ul li a:hover {
+        color: var(--skyblue);
+    }
+    #hamburger-menu ul li a .first {
+        margin-top: 1.5rem;
+    }
+    #hamburger-menu ul li a p {
+        font-size: 1.4rem;
+        margin: 1rem auto;
+    }
+    #hamburger-menu ul .pink {
+        color: red;
+    }
+    #hamburger-menu ul .pink:hover {
+        color: var(--pink);
+    }
+    #menu-btn-check:checked ~ #hamburger-menu {
+        display: block;
+    }
+    /*ヘッダーここまで*/
+    
+    /*メインビジュアルここから*/
+    body {
+        overflow-x: hidden;
+    }
+    #main-visual {
+        position: relative;
+    }
+    #main-visual h2 {
+        font-size: 2rem;
+        margin: 6.5rem 3.5rem;
+    }
+    #main-visual p {
+        font-size: 1.2rem;
+        line-height: 3rem;
+        margin: 6.5rem 2.5rem;
+    }
+    #mockup {
+        width: 40rem;
+        position: absolute;
+        top: 41%;
+        left: 2%;
+    }
+    .button {
+        width: 28rem;
+        margin: 32rem auto 6.5rem auto;
+    }
+    #main-visual .button p {
+        font-size: 2.5rem;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+    #main-visual .button p:hover {
+        transform: translateY(10px);
+        filter: drop-shadow(0 0 0 var(--dark-yellow));
+        transition: 0.3s;
+    }
+    /*メインビジュアルここまで*/
+
+    /*選ばれる理由ここから*/
+    #reason-heading {
+        font-size: 2rem;
+        margin: 6.5rem auto;
+    }
+    #reason {
+        display: block;
+        padding-bottom: 2.5rem;
+    }
+    .reason {
+        width: 80%;
+        height: 34rem;
+        margin: auto auto 6.5rem auto;
+    }
+    .reason img {
+        margin: 4rem auto;
+    }
+    .reason p {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    /*選ばれる理由ここまで*/
+
+    /*選ばれる理由その１〜３ここから*/
+    .square {
+        display: none;
+    }
+    .reason-detail h3 {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.8rem;
+        padding: 2rem 1rem;
+        margin: 4rem auto;
+    }
+    .reason-detail h2 {
+        font-size: 2rem;
+        margin: auto auto 4rem 5rem;
+        text-align: center;
+    }
+    .reason-detail p {
+        font-size: 1.2rem;
+        line-height: 3rem;
+    }
+    .reason-detail img {
+        width: 80%;
+        position: relative;
+        left: 51%;
+        transform: translateX(-50%);
+    }
+    .reason-detail .button {
+        margin: 0 auto 6.5rem auto;
+    }
+    .reason-detail .button p {
+        font-size: 3rem;
+    }
+    /*選ばれる理由その１〜３ここまで*/
+
+    /*プラン一覧ここから*/
+    #plan-heading h2 {
+        width: 25rem;
+        font-size: 5rem;
+    }
+    #plan-list {
+        display: block;
+    }
+    .plan {
+        width: 90%;
+        margin: 4rem auto;
+    }
+    .plan-detail h3 {
+        font-size: 3.5rem;
+    }
+    .plan-detail .price {
+        font-size: 4rem;
+    }
+    .plan-detail .price span {
+        font-size: 5.5rem;
+    }
+    .plan-detail p {
+        font-size: 2.5rem;
+    }
+    /*プラン一覧ここまで*/
+
+    /*お試しここから*/
+    #trial h2 {
+        font-size: 5rem;
+    }
+    #trial h3 {
+        font-size: 2rem;
+    }
+    #trial img {
+        width: 26rem;
+    }
+    #trial p {
+        font-size: 2.5rem;
+    }
+    /*お試しここまで*/
+    
+    /*ニュースここから*/
+    #news h2 {
+        font-size: 5rem;
+    }
+    time {
+        display: none;
+    }
+    .news-contents {
+        width: 75%;
+        padding: 1.5rem;
+        
+    }
+    .news-contents a {
+        display: block;
+    }
+    .news-contents p {
+        width: 100%;
+        font-size: 1.2rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    /*ニュースここまで*/
+
+    /*フッターここから*/
+    footer:nth-child(1) { 
+        order: 5; 
+    }
+    #footer-logo-box {
+        width: 6.5rem;
+    }
+    #footer-logo {
+        bottom: 2rem;
+        display: flex;
+        width: 30rem;
+        align-items: baseline;
+    }
+    #footer-logo img {
+        width: 14rem;
+    }
+    .footer-nav-box {
+        width: 100%;
+        gap: 0;
+        flex-wrap: wrap;
+        padding-bottom: 15rem;
+    }
+    .footer-nav {
+        width: 40%;
+        margin: 6.5rem 0 0 2rem;
+    }
+    .footer-nav h3 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+    .footer-nav-contents a {
+        font-size: 1.2rem;
+    }
+    small {
+        font-size: 1.2rem;
+    }
+    /*フッターここまで*/
+
+}
